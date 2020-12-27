@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './RandomColorSquare.css';
 export default class RandomColorSquare extends Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            backgroundColor: "black"
-        }
 
+    state = {
+        backgroundColor: "black"
     }
+
     changeColor() {
         this.setState(
             {
@@ -18,9 +16,6 @@ export default class RandomColorSquare extends Component {
     }
 
     render() {
-
-
-
         return (
             <div className="RandomColorSquare" onClick={this.changeColor.bind(this)} style={{ backgroundColor: (this.state.backgroundColor) }}   >
             </div>
